@@ -9,4 +9,8 @@ $(document).ready(function() {
     $(this).siblings().removeClass('selected-color');
     $(this).addClass('selected-color');
   });
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+  });
 });
