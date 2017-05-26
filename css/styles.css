@@ -355,6 +355,38 @@ td, th {
   font-size: 12px;
 }
 
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 300;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.photo-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+  max-width: 50%;
+  max-height: 80%;
+  display: none;
+}
+
+.backdrop:after {
+  content: "Click anywhere to dismiss";
+  color: #fff;
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  display: block;
+  transform: translateX(-50%);
+}
+
 @media screen and (max-width: 855px) {
   body {
     text-align: center;
