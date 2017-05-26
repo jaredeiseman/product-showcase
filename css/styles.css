@@ -1,0 +1,129 @@
+@font-face {
+  src: url(../fonts/bugslife.ttf);
+  font-family: Bugs-Life;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  height: 60px;
+  position: relative;
+  border-bottom: 4px solid black;
+}
+
+header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: -5;
+  display: block;
+  border-bottom: 4px solid #c10100;
+}
+header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: -15;
+  display: block;
+  border-bottom: 8px solid #000;
+}
+
+.title h1, .logo {
+  display: inline-block;
+}
+
+.title {
+  font-family: Bugs-life;
+  float: left;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/bug.png);
+  background-size: 30px 30px;
+  background-position: 15px 15px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.logo:after {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/crosshairs.png);
+  background-size: 60px 60px;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.title h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+nav {
+  height: 60px;
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 60px;
+  line-height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 30px;
+  vertical-align: bottom;
+}
+
+nav ul li a {
+  color: #c10100;
+  font-family: Bugs-life;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a:hover:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/bug.png);
+  background-size: 30px 30px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -35px;
+}
