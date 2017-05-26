@@ -290,6 +290,10 @@ input[type="submit"]:focus {
   outline: none;
 }
 
+input[type="submit"]:active {
+  background-color: #600000;
+}
+
 .related-products {
   float: right;
   width: 45%;
@@ -297,17 +301,27 @@ input[type="submit"]:focus {
   margin-bottom: -30000px;
 }
 
-.related {
+.row a {
+  display: block;
+}
+
+.row a {
   max-width: 40%;
   max-height: 200px;
   margin-bottom: 20px;
 }
 
-.related:nth-child(even) {
+.related {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.row a:nth-child(even) {
   float: left;
   clear: left;
 }
-.related:nth-child(odd) {
+
+.row a:nth-child(odd) {
   float: right;
   clear: right;
 }
@@ -342,6 +356,14 @@ td, th {
 }
 
 @media screen and (max-width: 855px) {
+  body {
+    text-align: center;
+  }
+
+  .container {
+    width: 90%;
+    margin-top: 10px;
+  }
   nav {
     display: block;
     position: static;
@@ -402,11 +424,11 @@ td, th {
   table {
     float: none;
     width: 100%;
-    text-align: left;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
   }
-  header * {
-    border-bottom: none;
-  }
+
 }
 
 @media screen and (max-width: 515px) {
