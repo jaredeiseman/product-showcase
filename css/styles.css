@@ -10,6 +10,12 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+strong, h1, h2, h3, h4, h5 {
+  color: #c10100;
+  font-weight: bold;
 }
 
 .clearfix:after {
@@ -27,6 +33,7 @@ header {
   height: 60px;
   position: relative;
   border-bottom: 4px solid black;
+  margin-bottom: 20px;
 }
 
 header:after {
@@ -59,6 +66,7 @@ header:before {
 .title {
   font-family: Bugs-life;
   float: left;
+  text-shadow: 1px 1px 1px black;
 }
 
 .logo {
@@ -126,4 +134,137 @@ nav ul li a:hover:before {
   position: absolute;
   top: 0;
   left: -35px;
+}
+#content {
+  width: 100%;
+}
+
+.column-container {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.image-column {
+  width: 55%;
+  float: left;
+  padding-bottom: 30000px;
+  margin-bottom: -30000px;
+}
+
+.details-column {
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  float: right;
+  padding-bottom: 30000px;
+  margin-bottom: -30000px;
+}
+
+.featured-img {
+  width: 100%;
+}
+
+.alt-img {
+  width: 30%;
+  margin: 0;
+  padding: 0;
+}
+
+img.alt-img:nth-of-type(3) {
+  margin: 0 4%;
+}
+
+.column-container:nth-of-type(2) {
+  border-bottom: none;
+}
+
+.order-form {
+  float: left;
+  width: 45%;
+  padding-bottom: 30000px;
+  margin-bottom: -30000px;
+}
+
+.group {
+  margin-bottom: 20px;
+}
+
+.color {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.selected-color {
+  border: 2px solid #c10100;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.black {
+  background-color: black;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+select, input {
+  display: block;
+  width: 300px;
+}
+
+select:focus {
+  outline: #c10100;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #c10100;
+  color: #fff;
+  font-size: 24px;
+  width: 300px;
+  border: none;
+  border-radius: 6px;
+}
+
+input[type="submit"]:hover {
+  background-color: #9a0000;
+  cursor: pointer;
+}
+
+.related-products {
+  float: right;
+  width: 45%;
+  padding-bottom: 30000px;
+  margin-bottom: -30000px;
+}
+
+.related {
+  max-height: 200px;
+  margin-bottom: 20px;
+}
+
+.related:nth-child(even) {
+  float: left;
+  clear: left;
+}
+.related:nth-child(odd) {
+  float: right;
+  clear: right;
 }

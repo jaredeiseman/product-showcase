@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>The Buginators</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
     <div class="container">
@@ -21,7 +24,64 @@
         </nav>
       </header>
       <section id="content">
+        <div class="column-container">
+          <div class="image-column">
+            <img src="img/promo.jpg" class="featured-img" alt="">
+            <hr>
+            <img src="img/feature.jpg" class="alt-img" alt="">
+            <img src="img/back.jpg" class="alt-img" alt="">
+            <img src="img/details.jpg" class="alt-img" alt="">
+          </div>
+          <div class="details-column">
+            <h1>The Bug-a-Salt</h1>
+            <h2>Original Salt Gun</h2>
 
+            <p>Indulge me, if you will, in an imaginary adventure through your home: You're kicking back on the sofa, enjoying an ice cold Coca-Cola, riveted with the latest episode of Wheel of Fortune. The commercials come on, and that old familiar feeling of a little pressure in your lower abdomen comes up. It's time to use the restroom. After a few grumbles of not wanting to get up incase your old pal, Pat Sajack comes back on, you finally concede to the inevitable and get up, and head towards the restroom. You arrive in the trusty ole bathroom a few moments later, and flip on the light. Then "BAM!!!!", you look in the sink, and there's a big nasty spider there! The worst right? Normally, you'd have very little options on how to deal with this new found catastrophic situation. You could let 'em be. Perhaps you could reach over it (THE TERROR) to turn on the sink and hope the water catches it and rinses it down the drain (but it might just come back again if I learned anything from nursery rhymes). Possibly you could grab some toilet paper and try and smush it, but what if it doesn't die and crawls out of the paper and gets on your hands?!</p>
+
+            <p>Well, ladies and gentlemen, the answer has finally arrived. The new <strong>Bug-a-Salt 2.0 Original Salt Gun</strong> is here to save you. All you have to do is reach over to your trusty bathroom gun rack (sold separately) and give that mean old spider a spray of salt, shredding it to pieces! After a blast of salt, that spider isn't climbing back up any drains.</p>
+          </div>
+        </div>
+        <div class="column-container">
+          <div class="order-form">
+            <h2>Order Now</h2>
+            <form>
+              <div class="group">
+                <label for="quantity">Quantity (<em>Limit 3 per customer</em>):</label>
+                <select name="quantity" id="quantity">
+                  <option></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="group">
+                <label for="color">Color:</label>
+                <div class="yellow color selected-color">
+
+                </div>
+                <div class="black color">
+
+                </div>
+                <div class="green color">
+
+                </div>
+                <div class="orange color">
+
+                </div>
+              </div>
+              <div class="group">
+                <input type="submit" name="submit-button" value="Add To Cart">
+              </div>
+            </form>
+          </div>
+          <div class="related-products">
+            <h2>Related Products</h2>
+            <img src="img/related1.jpg" class="related" alt="">
+            <img src="img/related2.jpg" class="related" alt="">
+            <img src="img/related3.jpg" class="related" alt="">
+            <img src="img/related4.jpg" class="related" alt="">
+          </div>
+        </div>
       </section>
     </div>
   </body>
