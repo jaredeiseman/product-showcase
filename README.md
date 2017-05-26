@@ -7,7 +7,7 @@
 ## Description
 The product-showcase project is a webpage featuring the 'Bug-A-Salt Original Salt Gun'. It was built with the idea in mind of demonstrating knowledge and ability to complete the below objectives. The page features a basic header with navigation, brand logo, and title. Images of the product, along with a description. A small image gallery of related products, a form to add the item to a cart. There are also customer reviews with a table showing quantity of reviews by rating.
 
-## objectives
+## Objectives
 * At least one centered element
 * A list or summary of features (lorem ipsum is fine)
 * At least one large image with an absolutely positioned caption (example)
